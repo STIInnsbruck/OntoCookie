@@ -7,4 +7,4 @@ by Geni Bushati, Sven Carsten Rasmusen, Anelia Kurteva, Anurag Vats, Petraq Nako
 [OntoCookie Tool](https://stiinnsbruck.github.io/OntoCookie/tool/cookie_application/build/web/index.html#/)
 
 ## Visualisation of the cookie ontology
-![Cookie Ontology](/images/OntoCookie.png?raw=true "Cookie Ontology")
+![Cookie Ontology](/images/OntoCookie.jpg?raw=true "Cookie Ontology")
