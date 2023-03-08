@@ -9,7 +9,6 @@ by Geni Bushati, Sven Carsten Rasmusen, Anelia Kurteva, Anurag Vats, Petraq Nako
 ## Visualisation of the cookie ontology class hierarchies
 ![Cookie Ontology](/images/OntoCookie_Class_Hierarchy.png?raw=true "Cookie Ontology Class Hierarchy")
 
-## Visualisation of the cookie ontology
-![Cookie Ontology](/images/OntoCookie.jpg?raw=true "Cookie Ontology")
+
 
 
