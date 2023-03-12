@@ -1,0 +1,470 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rdf:RDF
+	xmlns="http://www.semanticweb.org/OntoCookie#"
+	xmlns:schema="https://www.schema.org/"
+	xmlns:wgs="http://www.w3.org/2003/01/geo/wgs84_pos#"
+	xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+	xmlns:owl="http://www.w3.org/2002/07/owl#"
+	xmlns:gn="http://www.geonames.org/ontology#"
+	xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+	xmlns:fn="http://www.w3.org/2005/xpath-functions#"
+	xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+	xmlns:sesame="http://www.openrdf.org/schema/sesame#"
+	xmlns:dc="http://purl.org/dc/elements/1.1/">
+
+<rdf:Description rdf:about="http://www.semanticweb.org/OntoCookie">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Ontology"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/dc/elements/1.1/description">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AnnotationProperty"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.semanticweb.org/OntoCookie#hasDomain">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.semanticweb.org/OntoCookie#Cookie">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.semanticweb.org/OntoCookie#Domain">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.semanticweb.org/OntoCookie#hasDuration">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="https://schema.org/Duration">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="https://schema.org/dateCreated">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="https://schema.org/Date">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="https://schema.org/dateDeleted">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="https://schema.org/dateModified">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="https://schema.org/endDate">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="https://schema.org/expires">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="https://schema.org/Time">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="https://schema.org/startDate">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="https://schema.org/url">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.semanticweb.org/OntoCookie#Path">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="https://schema.org/value">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.semanticweb.org/OntoCookie#Value">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.semanticweb.org/OntoCookie#AuthenticationCookie">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.semanticweb.org/OntoCookie#FirstPartyCookie">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.semanticweb.org/OntoCookie#TrackingCookie">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.semanticweb.org/OntoCookie#HostOnlyCookie">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.semanticweb.org/OntoCookie#HttpOnlyCookie">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.semanticweb.org/OntoCookie#PersistentCookie">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.semanticweb.org/OntoCookie#SameSiteCookie">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.semanticweb.org/OntoCookie#SecureCookie">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.semanticweb.org/OntoCookie#SessionCookie">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.semanticweb.org/OntoCookie#SuperCookie">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.semanticweb.org/OntoCookie#ThirdPartyCookie">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.semanticweb.org/OntoCookie#ZombieCookie">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.semanticweb.org/OntoCookie#userId">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="https://www.schema.org/identifier">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="https://www.schema.org/Person">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.semanticweb.org/OntoCookie#hashed_id">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.semanticweb.org/OntoCookie#name">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node7">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node8">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node9">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.semanticweb.org/OntoCookie#AuthenticationCookie">
+	<rdfs:subClassOf rdf:resource="http://www.semanticweb.org/OntoCookie#Cookie"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.semanticweb.org/OntoCookie#FirstPartyCookie">
+	<rdfs:subClassOf rdf:resource="http://www.semanticweb.org/OntoCookie#TrackingCookie"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.semanticweb.org/OntoCookie#TrackingCookie">
+	<rdfs:subClassOf rdf:resource="http://www.semanticweb.org/OntoCookie#Cookie"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.semanticweb.org/OntoCookie#HostOnlyCookie">
+	<rdfs:subClassOf rdf:resource="http://www.semanticweb.org/OntoCookie#Cookie"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.semanticweb.org/OntoCookie#HttpOnlyCookie">
+	<rdfs:subClassOf rdf:resource="http://www.semanticweb.org/OntoCookie#Cookie"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.semanticweb.org/OntoCookie#PersistentCookie">
+	<rdfs:subClassOf rdf:resource="http://www.semanticweb.org/OntoCookie#Cookie"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.semanticweb.org/OntoCookie#SameSiteCookie">
+	<rdfs:subClassOf rdf:resource="http://www.semanticweb.org/OntoCookie#Cookie"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.semanticweb.org/OntoCookie#SecureCookie">
+	<rdfs:subClassOf rdf:resource="http://www.semanticweb.org/OntoCookie#Cookie"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.semanticweb.org/OntoCookie#SessionCookie">
+	<rdfs:subClassOf rdf:resource="http://www.semanticweb.org/OntoCookie#Cookie"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.semanticweb.org/OntoCookie#SuperCookie">
+	<rdfs:subClassOf rdf:resource="http://www.semanticweb.org/OntoCookie#Cookie"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.semanticweb.org/OntoCookie#ThirdPartyCookie">
+	<rdfs:subClassOf rdf:resource="http://www.semanticweb.org/OntoCookie#TrackingCookie"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.semanticweb.org/OntoCookie#ZombieCookie">
+	<rdfs:subClassOf rdf:resource="http://www.semanticweb.org/OntoCookie#Cookie"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.semanticweb.org/OntoCookie#hasDomain">
+	<rdfs:domain rdf:resource="http://www.semanticweb.org/OntoCookie#Cookie"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.semanticweb.org/OntoCookie#hasDuration">
+	<rdfs:domain rdf:resource="http://www.semanticweb.org/OntoCookie#Cookie"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="https://schema.org/dateCreated">
+	<rdfs:domain rdf:resource="http://www.semanticweb.org/OntoCookie#Cookie"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="https://schema.org/dateDeleted">
+	<rdfs:domain rdf:resource="http://www.semanticweb.org/OntoCookie#Cookie"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="https://schema.org/dateModified">
+	<rdfs:domain rdf:resource="http://www.semanticweb.org/OntoCookie#Cookie"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="https://schema.org/endDate">
+	<rdfs:domain rdf:resource="http://www.semanticweb.org/OntoCookie#Cookie"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="https://schema.org/expires">
+	<rdfs:domain rdf:resource="http://www.semanticweb.org/OntoCookie#Cookie"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="https://schema.org/startDate">
+	<rdfs:domain rdf:resource="http://www.semanticweb.org/OntoCookie#Cookie"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="https://schema.org/url">
+	<rdfs:domain rdf:resource="http://www.semanticweb.org/OntoCookie#Cookie"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="https://schema.org/value">
+	<rdfs:domain rdf:resource="http://www.semanticweb.org/OntoCookie#Cookie"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.semanticweb.org/OntoCookie#userId">
+	<rdfs:domain rdf:resource="http://www.semanticweb.org/OntoCookie#Cookie"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="https://www.schema.org/identifier">
+	<rdfs:domain rdf:resource="https://www.schema.org/Person"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.semanticweb.org/OntoCookie#hashed_id">
+	<rdfs:domain rdf:resource="http://www.semanticweb.org/OntoCookie#Cookie"/>
+	<rdfs:domain rdf:resource="https://www.schema.org/Person"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.semanticweb.org/OntoCookie#name">
+	<rdfs:domain rdf:resource="http://www.semanticweb.org/OntoCookie#Cookie"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.semanticweb.org/OntoCookie#hasDomain">
+	<rdfs:range rdf:resource="http://www.semanticweb.org/OntoCookie#Domain"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.semanticweb.org/OntoCookie#hasDuration">
+	<rdfs:range rdf:resource="https://schema.org/Duration"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="https://schema.org/dateCreated">
+	<rdfs:range rdf:resource="https://schema.org/Date"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="https://schema.org/dateDeleted">
+	<rdfs:range rdf:resource="https://schema.org/Date"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="https://schema.org/dateModified">
+	<rdfs:range rdf:resource="https://schema.org/Date"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="https://schema.org/endDate">
+	<rdfs:range rdf:resource="https://schema.org/Date"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="https://schema.org/expires">
+	<rdfs:range rdf:resource="https://schema.org/Date"/>
+	<rdfs:range rdf:resource="https://schema.org/Time"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="https://schema.org/startDate">
+	<rdfs:range rdf:resource="https://schema.org/Date"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="https://schema.org/url">
+	<rdfs:range rdf:resource="http://www.semanticweb.org/OntoCookie#Path"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="https://schema.org/value">
+	<rdfs:range rdf:resource="http://www.semanticweb.org/OntoCookie#Value"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.semanticweb.org/OntoCookie#userId">
+	<rdfs:range rdf:nodeID="node8"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="https://www.schema.org/identifier">
+	<rdfs:range rdf:nodeID="node9"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.semanticweb.org/OntoCookie#hashed_id">
+	<rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.semanticweb.org/OntoCookie#name">
+	<rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+	<rdfs:range rdf:nodeID="node7"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.semanticweb.org/OntoCookie#userId">
+	<owl:equivalentProperty rdf:resource="https://www.schema.org/identifier"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.semanticweb.org/OntoCookie#Cookie">
+	<dc:description rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal">HTTP cookies (also called web cookies, Internet cookies, browser cookies, or simply cookies) are small blocks of data created by a web server while a user is browsing a website and placed on the user's computer or other device by the user’s web browser. Cookies are placed on the device used to access a website, and more than one cookie may be placed on a user’s device during a session.</dc:description>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.semanticweb.org/OntoCookie#Domain">
+	<dc:description rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal">The 'domain' attribute signifies the domain for which the cookie is valid and can be submitted with every request for this domain or its subdomains. If this attribute is not specified, then the hostname of the originating server is used as the default value.</dc:description>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.semanticweb.org/OntoCookie#hasDuration">
+	<dc:description>The duration of a thing in seconds.</dc:description>
+</rdf:Description>
+
+<rdf:Description rdf:about="https://schema.org/Duration">
+	<dc:description rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal">The duration of a cookies (in seconds).</dc:description>
+</rdf:Description>
+
+<rdf:Description rdf:about="https://schema.org/Date">
+	<dc:description>A date value in ISO 8601 date format.</dc:description>
+</rdf:Description>
+
+<rdf:Description rdf:about="https://schema.org/Time">
+	<dc:description>A point in time recurring on multiple days in the form hh:mm:ss[Z|(+|-)hh:mm].</dc:description>
+</rdf:Description>
+
+<rdf:Description rdf:about="https://schema.org/url">
+	<dc:description>URL of the item.</dc:description>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.semanticweb.org/OntoCookie#Path">
+	<dc:description>The 'path' attribute signifies the URL or path for which the cookie is valid. The default path attribute is set as '/'.</dc:description>
+</rdf:Description>
+
+<rdf:Description rdf:about="https://schema.org/value">
+	<dc:description>The value of the quantitative value or property value node.</dc:description>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.semanticweb.org/OntoCookie#Value">
+	<dc:description>Defined the value of a cookie.</dc:description>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.semanticweb.org/OntoCookie#AuthenticationCookie">
+	<dc:description rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal">Authentication cookies are commonly used by web servers to authenticate that a user is logged in, and with which account they are logged in.</dc:description>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.semanticweb.org/OntoCookie#FirstPartyCookie">
+	<dc:description rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal">A first-party cookie - when a cookie's domain attribute will match the domain that is shown in the web browser's address bar.</dc:description>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.semanticweb.org/OntoCookie#TrackingCookie">
+	<dc:description rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal">Tracking cookies, and especially third-party tracking cookies, are commonly used as ways to compile long-term records of individuals' browsing histories.</dc:description>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.semanticweb.org/OntoCookie#HostOnlyCookie">
+	<dc:description rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal">Host Only cookie means that the cookie should be handled by the browser to the server only to the same host/server that firstly sent it to the browser.</dc:description>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.semanticweb.org/OntoCookie#HttpOnlyCookie">
+	<dc:description rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal">An http-only cookie cannot be accessed by client-side APIs, such as JavaScript. This restriction eliminates the threat of cookie theft via cross-site scripting (XSS). However, the cookie remains vulnerable to cross-site tracing (XST) and cross-site request forgery (CSRF) attacks. A cookie is given this characteristic by adding the HttpOnly flag to the cookie.</dc:description>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.semanticweb.org/OntoCookie#PersistentCookie">
+	<dc:description rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal">A persistent cookie expires at a specific date or after a specific length of time. For the persistent cookie's lifespan set by its creator, its information will be transmitted to the server every time the user visits the website that it belongs to, or every time the user views a resource belonging to that website from another website (such as an advertisement).</dc:description>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.semanticweb.org/OntoCookie#SameSiteCookie">
+	<dc:description rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal">With attribute SameSite=Strict, the browsers would only send cookies to a target domain that is the same as the origin domain.</dc:description>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.semanticweb.org/OntoCookie#SecureCookie">
+	<dc:description rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal">A secure cookie can only be transmitted over an encrypted connection (i.e. HTTPS). They cannot be transmitted over unencrypted connections (i.e. HTTP). This makes the cookie less likely to be exposed to cookie theft via eavesdropping. A cookie is made secure by adding the Secure flag to the cookie.</dc:description>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.semanticweb.org/OntoCookie#SessionCookie">
+	<dc:description rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal">A session cookie (also known as an in-memory cookie, transient cookie or non-persistent cookie) exists only in temporary memory while the user navigates a website. Session cookies expire or are deleted when the user closes the web browser. Session cookies are identified by the browser by the absence of an expiration date assigned to them.</dc:description>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.semanticweb.org/OntoCookie#SuperCookie">
+	<dc:description rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal">A supercookie is a cookie with an origin of a top-level domain (such as .com) or a public suffix (such as .co.uk). Ordinary cookies, by contrast, have an origin of a specific domain name, such as example.com.</dc:description>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.semanticweb.org/OntoCookie#ThirdPartyCookie">
+	<dc:description rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal">A third-party cookie, however, belongs to a domain different from the one shown in the address bar.</dc:description>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.semanticweb.org/OntoCookie#ZombieCookie">
+	<dc:description rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal">A zombie cookie is data and code that has been placed by a web server on a visitor's computer or other device in a hidden location outside the visitor's web browser's dedicated cookie storage location, and that automatically recreates a HTTP cookie as a regular cookie after the original cookie had been deleted.</dc:description>
+</rdf:Description>
+
+<rdf:Description rdf:about="https://www.schema.org/identifier">
+	<dc:description>The identifier property represents any kind of identifier for any kind of Thing, such as ISBNs, GTIN codes, UUIDs etc. Schema.org provides dedicated properties for representing many of these, either as textual strings or as URL (URI) links. See background notes for more details.</dc:description>
+</rdf:Description>
+
+<rdf:Description rdf:about="https://www.schema.org/Person">
+	<dc:description>A person (alive, dead, undead, or fictional).</dc:description>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node7">
+	<owl:onProperty rdf:resource="http://www.semanticweb.org/OntoCookie#name"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node8">
+	<owl:onProperty rdf:resource="http://www.semanticweb.org/OntoCookie#hashed_id"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node9">
+	<owl:onProperty rdf:resource="http://www.semanticweb.org/OntoCookie#hashed_id"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node7">
+	<owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node8">
+	<owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node9">
+	<owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+</rdf:Description>
+
+</rdf:RDF>
