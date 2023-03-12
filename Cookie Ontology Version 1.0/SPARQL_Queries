@@ -1,0 +1,95 @@
+In this section you can find the SPAQRL queries used for INSERT, SELECT and DELETE operations:
+
+1. INSERT queries:
+
+a. Insertion of Session Cookies:
+
+insertCookieQuery = `
+        PREFIX : <http://www.semanticweb.org/OntoCookie#>
+    
+        INSERT DATA {:${cookieName} a <http://www.semanticweb.org/OntoCookie#SessionCookie>;
+               :dateCreated :${date};
+               :hasDomain :${element_domain};
+               :name :${element.name} ;
+               :userId :${element.userId};.}
+        `;
+        
+        
+b.Insertion of other types of Cookies:
+
+ insertCookieQuery = `
+        PREFIX : <http://www.semanticweb.org/OntoCookie#>
+    
+        INSERT DATA {:${cookieName} a <http://www.semanticweb.org/OntoCookie#Cookie>;
+               :dateCreated :${date};
+               :expires :${element.expirationDate};
+               :hasDomain :${element_domain};
+               :name :${element.name} ;
+               :userId :${element.userId};.}
+        `;
+    }
+
+c. Insertion of Users:
+
+const insertUserQuery = `
+      PREFIX : <http://www.semanticweb.org/OntoCookie#>
+      PREFIX schema: <https://www.schema.org/>
+
+      INSERT DATA {:${cookies[0].userId} a <https://www.schema.org/Person>;
+            schema:identifier :${cookies[0].userId}.}
+      `;
+      
+   
+   
+ 
+ 
+ 
+ 
+ 2. SELECT Queries:
+ 
+ a. Select Cookie querie
+ 
+ 
+ let selectCookieQuery = `
+      PREFIX : <http://www.semanticweb.org/OntoCookie#>
+        select * where { 
+          ?s :userId :${userId} .
+          ?s :dateCreated ?dateCreated .
+          ?s :hasDomain ?domain .
+          ?s :name ?name .
+          ?s :userId ?userId .
+          OPTIONAL { ?s  :expires  ?expires } .
+          } ORDER BY ASC(?expires)
+      `;
+
+
+
+
+
+
+
+3. DELETE Queries:
+
+a. Delete Session Cookie querie:
+
+const deleteUserSessionCookiesQuery = `
+    PREFIX : <http://www.semanticweb.org/OntoCookie#>
+    PREFIX schema: <https://www.schema.org/>
+    
+    DELETE {
+      ?s a <http://www.semanticweb.org/OntoCookie#SessionCookie> .
+      } WHERE {
+      ?s :userId :${userId}.}
+      `;
+
+b. Delete other type of cookies querie:
+
+const deleteUserCookiesQuery = `
+  PREFIX : <http://www.semanticweb.org/OntoCookie#>
+  PREFIX schema: <https://www.schema.org/>
+  
+  DELETE {
+    ?s a <http://www.semanticweb.org/OntoCookie#Cookie> .
+    } WHERE {
+    ?s :userId :${userId}.}
+    `;
