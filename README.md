@@ -7,7 +7,7 @@ by Geni Bushati, Sven Carsten Rasmusen, Anelia Kurteva, Anurag Vats, Petraq Nako
 [OntoCookie Tool](https://stiinnsbruck.github.io/OntoCookie/tool/cookie_application/build/web/index.html#/)
 
 ## Visualisation of the cookie ontology class hierarchies
-![Cookie Ontology](/images/OntoCookie_Class_Hierarchy.png?raw=true "Cookie Ontology Class Hierarchy")
+![Cookie Ontology](/images/OntoCookie_v1.2.png.png?raw=true "The OntoCookie ontology")
 
 
 
